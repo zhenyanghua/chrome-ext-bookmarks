@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+<h1>Bookmarks</h1>
+<section class="settings">
+    <div role="button" class="cog" title="Settings" aria-label="settings">⚙️</div>
+    <div class="content" aria-expanded="false" aria-hidden="true">
+        <label for="file">BYOB🔖</label>
+        <input id="file" type="file" class="file" />
+        <pre class="file"></pre><button class="reset">Delete saved and re-select</button>
+    </div>
+</section>
+<main>
+    <div>
+        <label for="search">Search<span role="presentation"> 🔎</span></label>
+        <input autofocus id="search" type="text" name="bookmarks"/>
+    </div>
+    <ul id="list"></ul>
+</main>
+<script type="module" src="popup.js"></script>
+</body>
+</html>
